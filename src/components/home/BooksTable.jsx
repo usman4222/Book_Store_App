@@ -25,10 +25,10 @@ function BooksTabel({books}) {
                         <td className='border border-slate-700 rounded-md text-center'>
                             {book.title}
                         </td>
-                        <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+                        <td className='border border-slate-700 rounded-md text-center '>
                             {book.author}
                         </td>
-                        <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+                        <td className='border border-slate-700 rounded-md text-center '>
                             {book.publishYear}
                         </td>
                         <td className='border border-slate-700 rounded-md text-center'>
