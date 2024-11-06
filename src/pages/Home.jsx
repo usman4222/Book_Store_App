@@ -16,7 +16,7 @@ function Home() {
   useEffect(() => {
     setLoading(true)
     axios
-      .get('http://localhost:4000/books')
+      .get('https://book-store-backend-six-gilt.vercel.app/books')
       .then((res) => {
         setBooks(res.data.data)
         setLoading(false)

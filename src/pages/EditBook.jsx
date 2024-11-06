@@ -19,7 +19,7 @@ function EditBook() {
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`http://localhost:4000/books/${id}`)
+        axios.get(`https://book-store-backend-six-gilt.vercel.app/books/${id}`)
             .then((res) => {
                 const bookData = res.data.book;
                 setTitle(bookData.title);
@@ -49,7 +49,7 @@ function EditBook() {
             }
             setLoading(true);
             axios
-                .put(`http://localhost:4000/books/${id}`, data)
+                .put(`https://book-store-backend-six-gilt.vercel.app/books/${id}`, data)
                 .then(() => {
                     setLoading(false)
                     enqueueSnackbar("Book Updated Successfully", { variant: 'success' })
